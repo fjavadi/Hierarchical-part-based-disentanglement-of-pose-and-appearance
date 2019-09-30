@@ -66,7 +66,7 @@ Install Ubuntu libraries with:
 apt-get install some-software
 ~~~
 
-## Useful Features/Processed Data
+## Useful Features and/or Processed Data for Future Projects
 
 - At `data/processed/features`, you could find the features used in this project. 
 - At `data/processed/proposals`, you could find the bounding box proposals used. 
