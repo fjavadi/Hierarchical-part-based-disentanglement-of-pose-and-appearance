@@ -1,6 +1,9 @@
 # YOUR_PROJECT_NAME
 
-Give a few sentences to describe this project. 
+If you have trouble archiving the project please contact Alex Fan (fan@cs.ubc.ca). 
+
+## Introduction
+Give a few sentences to tell us about your project. 
 
 ## Benchmarking
 
