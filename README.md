@@ -17,7 +17,8 @@ source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
 
 
 ## Directory structure
-The directory structure of your new project looks like this: 
+
+The directory structure of your new project looks like this (feel free to add more folders or files): 
 
 ```
 ├── README.md          <- The top-level README for developers using this project.
@@ -35,15 +36,12 @@ The directory structure of your new project looks like this:
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
-├── src                <- Source code for use in this project.
-│   ├── __init__.py    <- Makes src a Python module
-│   │
-│   ├── data           <- Data processing scripts, dataset class definitions, dataloader definitions. 
-│   │   └── make_dataset.py
-│   │
-│   └── models         <- Related to model training and evaluation. 
-│       ├── predict_model.py
-│       └── train_model.py
+└── src                <- Source code for use in this project.
+    ├── __init__.py    <- Makes src a Python module
+    │
+    ├── data           <- Data processing scripts, dataset class definitions, dataloader definitions. 
+    │
+    └── models         <- Related to model training and evaluation. 
 ```
 
 ## Setup
