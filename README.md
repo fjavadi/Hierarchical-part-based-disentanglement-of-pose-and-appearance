@@ -15,6 +15,37 @@ source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
 --------|--------|--------|:------:|:------:|:-------:|:------:|:------:
 [LINK_TO_TRAINED_MODEL](URL-TO-TRAINED-MODEL) | Res-101 | faster r-cnn | 6 | 5e-3 | 70k,90k | 24.8 | 12.8
 
+
+## Directory structure
+The directory structure of your new project looks like this: 
+
+```
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+│
+├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          <- Jupyter notebooks for cool demos. 
+│
+├── reports            <- Detailed project reports
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+├── src                <- Source code for use in this project.
+│   ├── __init__.py    <- Makes src a Python module
+│   │
+│   ├── data           <- Data processing scripts, dataset class definitions, dataloader definitions. 
+│   │   └── make_dataset.py
+│   │
+│   └── models         <- Related to model training and evaluation. 
+│       ├── predict_model.py
+│       └── train_model.py
+```
+
 ## Setup
 
 This section shows how to setup this repository including installing requirements (including the software versions used), setting up the files to run this repository, etc. 
