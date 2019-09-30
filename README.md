@@ -21,27 +21,27 @@ source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
 The directory structure of your new project looks like this (feel free to add more folders or files): 
 
 ```
-	├── README.md          <- The top-level README for developers using this project.
-	├── data
-	│   ├── processed      <- Processed data such as the extracted features, bounding box proposals, etc.
-	│   └── raw            <- The original dataset obtained. 
-	│
-	├── models             <- Trained model weights, e.g. created by `torch.save(model.state_dict(), ..)`.
-	│
-	├── notebooks          <- Jupyter notebooks for cool demos. 
-	│
-	├── reports            <- Detailed project reports
-	│   └── figures        <- Generated graphics and figures to be used in reporting
-	│
-	├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-	│                         generated with `pip freeze > requirements.txt`
-	│
-	└── src                <- Source code for use in this project.
-	    ├── __init__.py    <- Makes src a Python module
-	    │
-	    ├── data           <- Data processing scripts, dataset class definitions, dataloader definitions. 
-	    │
-	    └── models         <- Related to model training and evaluation. 
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── processed      <- Processed data such as the extracted features, bounding box proposals, etc.
+│   └── raw            <- The original dataset obtained. 
+│
+├── models             <- Trained model weights, e.g. created by `torch.save(model.state_dict(), ..)`.
+│
+├── notebooks          <- Jupyter notebooks for cool demos. 
+│
+├── reports            <- Detailed project reports
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+└── src                <- Source code for use in this project.
+    ├── __init__.py    <- Makes src a Python module
+    │
+    ├── data           <- Data processing scripts, dataset class definitions, dataloader definitions. 
+    │
+    └── models         <- Related to model training and evaluation. 
 ```
 
 ## Setup
