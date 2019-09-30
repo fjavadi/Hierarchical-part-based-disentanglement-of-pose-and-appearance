@@ -1,6 +1,6 @@
 # YOUR_PROJECT_NAME
 
-If you have trouble archiving the project please contact Alex Fan (fan@cs.ubc.ca). 
+If you have trouble archiving the project please contact Alex Fan (fan@cs.ubc.ca). This is a template repository, please modify it according to your project. 
 
 ## Introduction
 Give a few sentences to tell us about your project. 
@@ -63,7 +63,7 @@ python main.py --config-file configs/faster_rcnn_res101.yaml --inference --resum
 
 ## Contact and Reference
 
-- For more information, please contact xxxx@cs.ubc.ca
+- For more information, please contact REPO-OWNER@cs.ubc.ca
 
 ~~~
 @inproceedings{latex-citation-name,
