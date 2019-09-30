@@ -18,7 +18,7 @@ source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
 
 ## Directory structure
 
-The directory structure of your new project looks like this (feel free to add more folders or files): 
+The overall directory structure of your new project looks like this (feel free to add more folders or files): 
 
 ```
 ├── README.md          <- The top-level README for developers using this project.
@@ -68,8 +68,8 @@ apt-get install some-software
 
 ## Useful Features/Processed Data
 
-- At `data/preprocessed/features`, you could find the features used in this project. 
-- At `data/preprocessed/proposals`, you could find the bounding box proposals used. 
+- At `data/processed/features`, you could find the features used in this project. 
+- At `data/processed/proposals`, you could find the bounding box proposals used. 
 
 ## Training
 
