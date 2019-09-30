@@ -23,10 +23,10 @@ The directory structure of your new project looks like this (feel free to add mo
 ```
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   ├── processed      <- Processed data such as the extracted features, bounding box proposals, etc.
+│   └── raw            <- The original dataset obtained. 
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models             <- Trained model weights, e.g. created by `torch.save(model.state_dict(), ..)`.
 │
 ├── notebooks          <- Jupyter notebooks for cool demos. 
 │
