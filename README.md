@@ -1,6 +1,6 @@
 # YOUR_PROJECT_NAME
 
-> Give a few sentences to describe this project. 
+Give a few sentences to describe this project. 
 
 ## Benchmarking
 
@@ -14,7 +14,7 @@ source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
 
 ## Setup
 
-> This section shows how to setup this repository including installing requirements (including the software versions used), setting up the files to run this repository, etc. 
+This section shows how to setup this repository including installing requirements (including the software versions used), setting up the files to run this repository, etc. 
 
 ### Requirements
 
@@ -41,7 +41,7 @@ apt-get install some-software
 
 ## Training
 
-> This section provides instructions to training this model from scratch. 
+This section provides instructions to training this model from scratch. 
 
 Train object detection model:
 ~~~
@@ -50,7 +50,7 @@ python main.py --config-file configs/faster_rcnn_res101.yaml
 
 ## Evaluate
 
-> This section shows how to evaluate a trained model on a dataset to reproduce the benchmark performance. 
+This section shows how to evaluate a trained model on a dataset to reproduce the benchmark performance. 
 
 Evaluate object detection model:
 
