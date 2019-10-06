@@ -1,20 +1,18 @@
 # YOUR_PROJECT_NAME
 
-If you have trouble archiving the project please contact Alex Fan (fan@cs.ubc.ca). This is a template repository, please modify it according to your project. 
+Welcome to the project template repository for UBC Computer Vision group. Please follow the steps in the TODO list below to archive this project. If you have trouble archiving the project (e.g. getting the pip requirements and the versions of your dependencies), please contact Alex Fan (fan@cs.ubc.ca). 
+
+TODOs: 
+- Fork the latest version of this repository into your personal GitHub account. 
+- In your forked repository, restructure your code using the folder system below. 
+  - You are welcome to add/remove folders or files, but make sure to keep the overall structure.
+- Organize your code following this folder structure.
+- Update this `README.md` file to suit your needs.
+  - Feel free to add/remove sections in this `README.md` as long as it is easy for others to fully make use of this repo.
 
 ## Introduction
-Give a few sentences to tell us about your project. 
 
-## Benchmarking
-
-This section stores the trained model(s) for this project and its benchmark performance. 
-
-### Object Detection
-
-source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
---------|--------|--------|:------:|:------:|:-------:|:------:|:------:
-[LINK_TO_TRAINED_MODEL](URL-TO-TRAINED-MODEL) | Res-101 | faster r-cnn | 6 | 5e-3 | 70k,90k | 24.8 | 12.8
-
+(Give a few sentences to tell us about your project.)
 
 ## Directory structure
 
@@ -26,7 +24,9 @@ The overall directory structure of your new project looks like this (feel free t
 │   ├── processed      <- Processed data such as the extracted features, bounding box proposals, etc.
 │   └── raw            <- The original dataset obtained. 
 │
-├── models             <- Trained model weights, e.g. created by `torch.save(model.state_dict(), ..)`.
+├── trained_models     <- Trained model weights, e.g. created by `torch.save(model.state_dict(), ..)`.
+│
+├── scripts            <- Scripts such as for data preprocessing (e.g. `preprocess.py`)
 │
 ├── notebooks          <- Jupyter notebooks for cool demos. 
 │
@@ -37,12 +37,18 @@ The overall directory structure of your new project looks like this (feel free t
 │                         generated with `pip freeze > requirements.txt`
 │
 └── src                <- Source code for use in this project.
-    ├── __init__.py    <- Makes src a Python module
-    │
-    ├── data           <- Data processing scripts, dataset class definitions, dataloader definitions. 
-    │
-    └── models         <- Related to model training and evaluation. 
 ```
+
+## Benchmarking
+
+This section stores the trained model(s) for this project and its benchmark performance. 
+
+(For example, Object Detection):
+
+source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
+--------|--------|--------|:------:|:------:|:-------:|:------:|:------:
+[LINK_TO_TRAINED_MODEL](URL-TO-TRAINED-MODEL) | Res-101 | faster r-cnn | 6 | 5e-3 | 70k,90k | 24.8 | 12.8
+
 
 ## Setup
 
@@ -50,32 +56,39 @@ This section shows how to setup this repository including installing requirement
 
 ### Requirements
 
-- Python 3.6
-- PyTorch 1.0
-- CUDA 8.0
+- Python X.X
+- PyTorch X.X
+- CUDA X.X
 
 ### Dependencies
 
-Install all the python dependencies using pip:
+Install all the Python dependencies using pip:
+
 ~~~
 pip install -r requirements.txt
 ~~~
 
 Install Ubuntu libraries with: 
+
 ~~~
 apt-get install some-software
 ~~~
 
 ## Useful Features and/or Processed Data for Future Projects
 
-- At `data/processed/features`, you could find the features used in this project. 
-- At `data/processed/proposals`, you could find the bounding box proposals used. 
+This section mentions potential useful processed data or features that might be useful for future projects (e.g. bounding box proposals).
+
+- `PATH/TO/FEATURES`: a description of what it is.
+
+For example,
+
+- `data/processed/proposals`, you could find the bounding box proposals used. 
 
 ## Training
 
 This section provides instructions to training this model from scratch. 
 
-Train object detection model:
+For example,
 ~~~
 python main.py --config-file configs/faster_rcnn_res101.yaml
 ~~~
@@ -84,8 +97,7 @@ python main.py --config-file configs/faster_rcnn_res101.yaml
 
 This section shows how to evaluate a trained model on a dataset to reproduce the benchmark performance. 
 
-Evaluate object detection model:
-
+For example,
 ~~~
 python main.py --config-file configs/faster_rcnn_res101.yaml --inference --resume $CHECKPOINT
 ~~~
