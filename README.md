@@ -109,7 +109,7 @@ python main.py --config-file configs/faster_rcnn_res101.yaml --inference --resum
 
 ~~~
 @inproceedings{latex-citation-name,
-    title={THE TITLE OF YOUR REPORT/TITLE},
+    title={THE TITLE OF YOUR REPORT/PAPER},
     author={LAST NAME, FIRST NAME},
     booktitle={REPORT TYPE/CONFERENCE TYPE},
     year={20XX}
