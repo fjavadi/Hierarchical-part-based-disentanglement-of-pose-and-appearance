@@ -29,7 +29,7 @@ The overall directory structure of your new project should look like as follows.
 │
 ├── notebooks          <- Jupyter notebooks for cool demos. 
 │
-├── reports            <- Detailed project reports
+├── reports            <- E.g. LaTeX files for a conference
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
