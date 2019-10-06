@@ -9,7 +9,9 @@ CHECKLIST:
 - [ ] Update this `README.md` file to suit your needs.
   - Feel free to add/remove sections in this `README.md` as long as it is easy for others to fully make use of this repo.
 
-> **Warning: DO NOT use the Fork button on GitHub, it will make your repository public.** Instead, head over to GitHub and create an empty private repository. Suppose it has an identifier `https://github.com/USER_NAME/my_private_project.git` and now you can fork this repository into a private repository by entering the following commands.
+> **Warning: DO NOT use the Fork button on GitHub, it will make your repository public.** Instead, head over to GitHub and create an empty private repository. 
+> 
+> Suppose it has an identifier `https://github.com/USER_NAME/my_private_project.git` and now you can fork this repository into a private repository by entering the following commands.
 
 ~~~
 MY_GIT_REPO=https://github.com/USER_NAME/my_private_project.git
