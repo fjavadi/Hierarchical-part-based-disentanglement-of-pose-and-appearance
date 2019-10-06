@@ -1,13 +1,12 @@
 # YOUR_PROJECT_NAME
 
-Welcome to the project template repository for UBC Computer Vision group. Please follow the steps in the TODO list below to archive this project. If you have trouble archiving the project (e.g. getting the pip requirements and the versions of your dependencies), please contact Alex Fan (fan@cs.ubc.ca). 
+Welcome to the project template repository for the UBC Computer Vision group. Please follow the steps in the checklist below to archive this project. If you have trouble archiving the project (e.g. getting the pip requirements and the versions of your dependencies), please contact Alex Fan (fan@cs.ubc.ca). 
 
-TODOs: 
-- Fork the latest version of this repository into your personal GitHub account. 
-- In your forked repository, restructure your code using the folder system below. 
-  - You are welcome to add/remove folders or files, but make sure to keep the overall structure.
-- Organize your code following this folder structure.
-- Update this `README.md` file to suit your needs.
+CHECKLIST:
+- [x] Fork the latest version of this repository into your personal GitHub account. 
+- [ ] In your forked repository, restructure your code using the folder system below. 
+- [ ] Organize your code following this folder structure.
+- [ ] Update this `README.md` file to suit your needs.
   - Feel free to add/remove sections in this `README.md` as long as it is easy for others to fully make use of this repo.
 
 ## Introduction
@@ -16,7 +15,7 @@ TODOs:
 
 ## Directory structure
 
-The overall directory structure of your new project looks like this (feel free to add more folders or files): 
+The overall directory structure of your new project should look like as follows. You are welcome to add/remove folders or files, but make sure to keep the overall structure.
 
 ```
 ├── README.md          <- The top-level README for developers using this project.
