@@ -1,6 +1,6 @@
 # YOUR_PROJECT_NAME
 
-Welcome to the project template repository for the UBC Computer Vision group. Please follow the steps in the checklist below to archive this project. If you have trouble archiving the project (e.g. getting the pip requirements and the versions of your dependencies), please contact the SHIELD admin of our group (Alex Fan, fan@cs.ubc.ca). 
+Welcome to the project template repository for the UBC Computer Vision group. Please follow the steps in the checklist below to archive this project. If you have trouble archiving the project (e.g. getting the pip requirements and the versions of your dependencies), please contact the SHIELD admin of our group. 
 
 CHECKLIST:
 - [x] Fork the latest version of this repository into your personal GitHub account. 
