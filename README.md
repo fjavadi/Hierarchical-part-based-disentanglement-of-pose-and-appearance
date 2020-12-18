@@ -38,6 +38,7 @@ PD| [Pose Endcoder](https://drive.google.com/file/d/1FQPLKfILW-rEoXvLOEZG5Zm4YF6
 HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDmhrbSMB/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1EO3XYN7dEO1QYF1N6NiUgGkn7ss7mslm/view?usp=sharing)| 0.001 | 200 | 30
 
 ** batch_size should always be greater than 32 (Accumulation gradient technique is used to allow using large batch_sizes)
+
 *** The trained HPD model consists of two levels of hierarchy, 15 parts in the first level and 30 in the second. 
 
 
@@ -50,6 +51,7 @@ HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDm
 
 ## Dataset
 The code can be applied on any unlabled image dataset. data_processing notebook saves image datasets as hdf5 files. data_loader.py only accepts hdf5 files as its input. 
+
 For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
 
 ## Training
