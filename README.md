@@ -49,7 +49,7 @@ HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDm
 - wandb = 0.9.6 (For saving results and visualization)
 
 ## Dataset
-The code can be applied on any unlabled image dataset. data_processing notebook saves image datasets as hdf5 files. data_loader.py only accepts hdf5 files. 
+The code can be applied on any unlabled image dataset. data_processing notebook saves image datasets as hdf5 files. data_loader.py only accepts hdf5 files as its input. 
 For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
 
 ## Training
