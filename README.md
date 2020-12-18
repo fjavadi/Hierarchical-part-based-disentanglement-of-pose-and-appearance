@@ -55,6 +55,10 @@ The code can be applied on any unlabled image dataset. data_processing notebook 
 
 For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
 
+## Models
+The decoder is a U-net network. (Refere to the models.py), and the encoder is deeplabv3_resnet50.
+To change the  architecture of networks, firstly you need to change the models.py and desing your model, then define the models in the PD and HPD notebooks and start the training. 
+
 ## Training
 
 For training the models fram scratch, modify PD and HPD notebooks to not start from the saved models. If you don't change the notebooks, training will start from the pre-trained models. 
