@@ -51,26 +51,17 @@ HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDm
 
 ## Dataset
 The code can be applied on any unlabled image dataset. data_processing notebook saves image datasets as hdf5 files. data_loader.py only accepts hdf5 files as its input. 
+* A small scale dataset consistinig of 100 images from  the DeepFashion dataset is provided to test the pre-trained models and see some sample results. 
 
 For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
 
 ## Training
 
-This section provides instructions to training this model from scratch. 
-
-For example,
-~~~
-python main.py --config-file configs/faster_rcnn_res101.yaml
-~~~
+For training the models fram scratch, modify PD and HPD notebooks to not start from the saved models. If you don't change the notebooks, training will start from the pre-trained models. 
 
 ## Evaluate
-
-This section shows how to evaluate a trained model on a dataset to reproduce the benchmark performance. 
-
-For example,
-~~~
-python main.py --config-file configs/faster_rcnn_res101.yaml --inference --resume $CHECKPOINT
-~~~
+- testPD file evaluates the PD model on the task of Pose and Appearance Transfer. It can be run by the testPD notebook.
+- testHPD file tests the HPD model on the image reconstrcution task in terms of the pixel-wise loss. It can be run by the testHPD notebook.
 
 ## Contact and Reference
 - For more information, please contact fjavadi@cs.ubc.ca
