@@ -1,32 +1,13 @@
-# YOUR_PROJECT_NAME
-
-Welcome to the project template repository for the UBC Computer Vision group. Please follow the steps in the checklist below to archive this project. If you have trouble archiving the project (e.g. getting the pip requirements and the versions of your dependencies), please contact the SHIELD admin of our group. 
-
-CHECKLIST:
-- [x] Fork the latest version of this repository into your personal GitHub account. 
-- [ ] In your forked repository, restructure your code using the folder system below. 
-- [ ] Organize your code following this folder structure.
-- [ ] Update this `README.md` file to suit your needs.
-  - Feel free to add/remove sections in this `README.md` as long as it is easy for others to fully make use of this repo.
-
-> **Warning: DO NOT use the Fork button on GitHub, it will make your repository public.** Instead, head over to GitHub and create an empty private repository. 
-> 
-> Suppose it has an identifier `https://github.com/USER_NAME/my_private_project.git` and now you can fork this repository into a private repository by entering the following commands.
-
-~~~
-MY_GIT_REPO=https://github.com/USER_NAME/my_private_project.git
-git clone --bare https://github.com/zc-alexfan/cv_project.git
-cd cv_project.git 
-git push --mirror $MY_GIT_REPO
-cd ..
-rm -rf cv_project.git
-git clone $MY_GIT_REPO
-~~~
-
+# Hierarchical Part-based Disentanglement of Pose and Appearance
 
 ## Introduction
+We propose a new method, called HPD (Hierarchical Part-based Disentanglement), for learning
+structured object parts alongside with disentangling their spatial and appearance
+factors. Training needs no annotations or prior knowledge on any of the factors
+or object classes, and can be applied to any image dataset without any limitations.
 
-(Give a few sentences to tell us about your project.)
+Refer to the thesis for more details of our model and the results.
+
 
 ## Directory structure
 
@@ -35,35 +16,27 @@ The overall directory structure of your new project should look like as follows.
 ```
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── processed      <- Processed data such as the extracted features, bounding box proposals, etc.
-│   └── raw            <- The original dataset obtained. 
+│   ├── processed      <- A subset of DeepFashion dataset including 100 images in a h5 format.
+│   └── raw            <- 100 sample raw images from the DeepFashion datasset 
 │
-├── trained_models     <- Trained model weights, e.g. created by `torch.save(model.state_dict(), ..)`.
+├── trained_models     <- Trained models (PD and HPD), created by `torch.save(model.state_dict(), ..)`.
+││
+├── notebooks          <- Jupyter notebooks for data_processing and training PD and HPD. 
 │
-├── scripts            <- Scripts such as for data preprocessing (e.g. `preprocess.py`)
-│
-├── notebooks          <- Jupyter notebooks for cool demos. 
-│
-├── reports            <- E.g. LaTeX files for a conference
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-└── src                <- Source code for use in this project.
+├── reports            <- Master's Thesis
+│   └── figures        
+└── src                <- Source code
 ```
-
-**Note: all files in `data/processed` and `data/raw` should be symbolic links to the `/shield/datasets` directory. Please contact the SHIELD admin with write permission to store into this directory.**
 
 ## Benchmarking
 
-This section stores the trained model(s) for this project and its benchmark performance. 
+This section stores the trained models.
 
-(For example, Object Detection):
+model  | encoder | decoder | lr 
+--------|--------|--------|:------:
+PD| [Pose Endcoder](https://drive.google.com/file/d/1FQPLKfILW-rEoXvLOEZG5Zm4YF6fXcKh/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1kNa6PtS_dVK-IqLaIicn9IqbGNQJ8zmJ/view?usp=sharing)| 0.001
+HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDmhrbSMB/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1EO3XYN7dEO1QYF1N6NiUgGkn7ss7mslm/view?usp=sharing)| 0.001
 
-source  | backbone | model | bs | lr  | lr_decay | mAP@0.5 | mAP@0.50:0.95
---------|--------|--------|:------:|:------:|:-------:|:------:|:------:
-[LINK_TO_TRAINED_MODEL](URL-TO-TRAINED-MODEL) | Res-101 | faster r-cnn | 6 | 5e-3 | 70k,90k | 24.8 | 12.8
 
 
 ## Setup
