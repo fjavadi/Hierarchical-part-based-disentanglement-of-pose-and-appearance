@@ -33,7 +33,7 @@ The overall directory structure of your new project should look like as follows.
 This section stores the trained models.
 
 model  | encoder | decoder | lr | epochs| n_final_keypoints
---------|--------|--------|:------:
+--------|--------|--------|:------:|:------:|:------:
 PD| [Pose Endcoder](https://drive.google.com/file/d/1FQPLKfILW-rEoXvLOEZG5Zm4YF6fXcKh/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1kNa6PtS_dVK-IqLaIicn9IqbGNQJ8zmJ/view?usp=sharing)| 0.001| 350| 15
 HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDmhrbSMB/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1EO3XYN7dEO1QYF1N6NiUgGkn7ss7mslm/view?usp=sharing)| 0.001 | 200 | 30
 
