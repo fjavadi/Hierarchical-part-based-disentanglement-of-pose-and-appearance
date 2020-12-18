@@ -24,7 +24,7 @@ The overall directory structure of your new project should look like as follows.
 ├── notebooks          <- Jupyter notebooks for data_processing and training PD and HPD. 
 │
 ├── reports            <- Master's Thesis
-│   └── figures        
+│   └── figures        <- Model's images
 └── src                <- Source code
 ```
 
@@ -32,46 +32,25 @@ The overall directory structure of your new project should look like as follows.
 
 This section stores the trained models.
 
-model  | encoder | decoder | lr 
+model  | encoder | decoder | lr | epochs| n_final_keypoints
 --------|--------|--------|:------:
-PD| [Pose Endcoder](https://drive.google.com/file/d/1FQPLKfILW-rEoXvLOEZG5Zm4YF6fXcKh/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1kNa6PtS_dVK-IqLaIicn9IqbGNQJ8zmJ/view?usp=sharing)| 0.001
-HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDmhrbSMB/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1EO3XYN7dEO1QYF1N6NiUgGkn7ss7mslm/view?usp=sharing)| 0.001
+PD| [Pose Endcoder](https://drive.google.com/file/d/1FQPLKfILW-rEoXvLOEZG5Zm4YF6fXcKh/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1kNa6PtS_dVK-IqLaIicn9IqbGNQJ8zmJ/view?usp=sharing)| 0.001| 350| 15
+HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDmhrbSMB/view?usp=sharing) | [Decoder](https://drive.google.com/file/d/1EO3XYN7dEO1QYF1N6NiUgGkn7ss7mslm/view?usp=sharing)| 0.001 | 200 | 30
+
+** batch_size should always be greater than 32 (Accumulation gradient technique is used to allow using large batch_sizes)
+*** The trained HPD model consists of two levels of hierarchy, 15 parts in the first level and 30 in the second. 
 
 
+## Requirements
 
-## Setup
+- Python = 3.7.3
+- PyTorch = 1.6.0
+- CUDA = 10.2 
+- wandb = 0.9.6 (For saving results and visualization)
 
-This section shows how to setup this repository including installing requirements (including the software versions used), setting up the files to run this repository, etc. 
-
-### Requirements
-
-- Python X.X
-- PyTorch X.X
-- CUDA X.X
-
-### Dependencies
-
-Install all the Python dependencies using pip:
-
-~~~
-pip install -r requirements.txt
-~~~
-
-Install Ubuntu libraries with: 
-
-~~~
-apt-get install some-software
-~~~
-
-## Useful Features and/or Processed Data for Future Projects
-
-This section mentions potential useful processed data or features that might be useful for future projects (e.g. bounding box proposals).
-
-- `PATH/TO/FEATURES`: a description of what it is.
-
-For example,
-
-- `data/processed/proposals`, you could find the bounding box proposals used. 
+## Dataset
+The code can be applied on any unlabled image dataset. data_processing notebook saves image datasets as hdf5 files. data_loader.py only accepts hdf5 files. 
+For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
 
 ## Training
 
@@ -92,14 +71,5 @@ python main.py --config-file configs/faster_rcnn_res101.yaml --inference --resum
 ~~~
 
 ## Contact and Reference
-
-- For more information, please contact REPO-OWNER@cs.ubc.ca
-
-~~~
-@inproceedings{latex-citation-name,
-    title={THE TITLE OF YOUR REPORT/PAPER},
-    author={LAST NAME, FIRST NAME},
-    booktitle={REPORT TYPE/CONFERENCE TYPE},
-    year={20XX}
-}
-~~~
+- For more information, please contact fjavadi@cs.ubc.ca
+- The PD model core idea comes from [Lorenz et al.](https://arxiv.org/abs/1903.06946) 
