@@ -53,7 +53,8 @@ HPD| [Pose Endcoder](https://drive.google.com/file/d/19Vhbhlw6hhIcNoECw57ze2cRDm
 The code can be applied on any unlabled image dataset. data_processing notebook saves image datasets as hdf5 files. data_loader.py only accepts hdf5 files as its input. 
 * A small scale dataset consistinig of 100 images from  the DeepFashion dataset is provided to test the pre-trained models and see some sample results. 
 
-For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
+** For new datasets, firstly you need to store it as a hdf5 dataset, then modify the data_loader.py file. 
+*** data_processing.ipynb loads CUB, MAFL and Egocap datasets as h5 files.
 
 ## Models
 The decoder is a U-net network. (Refere to the models.py), and the encoder is deeplabv3_resnet50.
