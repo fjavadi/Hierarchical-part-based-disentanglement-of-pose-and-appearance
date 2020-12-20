@@ -67,6 +67,19 @@ For training the models fram scratch, modify PD and HPD notebooks to not start f
 - testPD file evaluates the PD model on the task of Pose and Appearance Transfer. It can be run by the testPD notebook.
 - testHPD file tests the HPD model on the image reconstrcution task in terms of the pixel-wise loss. It can be run by the testHPD notebook.
 
+## List of Parameters
+parameter  | file | denotes 
+--------|:------:|:------:
+
+epochs| PD.ipynb, HPD.ipynb| number of training epochs
+batch_size|PD.ipynb, HPD.ipynb| size of the training/testing batch
+accumulation_steps|PD.ipynb, HPD.ipynb| number of iterations the gradient accumulates
+n_app_features|PD.ipynb, HPD.ipynb| dimension of the appearance vectors (=3)
+num_joints|PD.ipynb, HPD.ipynb| total number of parts predicted by encoder
+k |HPD.ipynb | number of parts in the first layer of hierarchy
+
+** For changing the weight of the perceptual loss and the hierarchical loss, refer to train_PD.py and train_HPD.py files. 
+
 ## Contact and Reference
 - For more information, please contact fjavadi@cs.ubc.ca
 - The PD model core idea comes from [Lorenz et al.](https://arxiv.org/abs/1903.06946) 
