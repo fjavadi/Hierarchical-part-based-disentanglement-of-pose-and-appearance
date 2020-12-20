@@ -70,11 +70,11 @@ For training the models fram scratch, modify PD and HPD notebooks to not start f
 ## List of Parameters
 parameter  | file | denotes 
 --------|:------:|:------:
-epochs | PD.ipynb, HPD.ipynb | number of training epochs
+epochs | PD.ipynb, HPD.ipynb | number of the training epochs
 batch_size | PD.ipynb, HPD.ipynb | size of the training/testing batch
-accumulation_steps | PD.ipynb, HPD.ipynb | number of iterations the gradient accumulates
+accumulation_steps | PD.ipynb, HPD.ipynb | number of the iterations which gradient accumulates
 n_app_features | PD.ipynb, HPD.ipynb | dimension of the appearance vectors (=3)
-num_joints | PD.ipynb, HPD.ipynb | total number of parts predicted by encoder
+num_joints | PD.ipynb, HPD.ipynb | total number of parts predicted by the encoder
 k | HPD.ipynb | number of parts in the first layer of hierarchy
 
 ** For changing the weight of the perceptual loss and the hierarchical loss, refer to train_PD.py and train_HPD.py files. 
